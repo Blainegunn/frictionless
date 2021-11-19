@@ -212,7 +212,7 @@ class Gnav {
     const profileEl = createTag('div', { class: 'gnav-profile' });
 
     window.adobeid = {
-      client_id: 'bizweb',
+      client_id: 'frictionlesstest',
       scope: 'AdobeID,openid,gnav',
       locale: 'en_US',
       autoValidateToken: true,

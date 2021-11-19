@@ -32,7 +32,8 @@ export function getEnv() {
       target: false,
     },
     prod: {
-      ims: 'prod',
+      // todo: fix later
+      ims: 'stg1',
       adminconsole: 'adminconsole.adobe.com',
       account: 'account.adobe.com',
       target: true,

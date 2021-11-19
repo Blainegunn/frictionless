@@ -39,7 +39,7 @@ export const config = {
       styles: 'dc-widget.css',
       scripts: 'dc-widget.js',
     },
-    '.background-salmon': {
+    '.background': {
       location: '/blocks/background/',
       styles: 'background.css',
     },
