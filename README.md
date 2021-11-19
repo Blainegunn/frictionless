@@ -1,9 +1,7 @@
-# Project Helix Website
-[www.hlx.live](https://www.hlx.live)
+# Frictionless PDF (Helix)
 
-[![codecov](https://codecov.io/gh/adobe/helix-website/branch/main/graph/badge.svg?token=If90y6KMqx)](https://codecov.io/gh/adobe/helix-website)
 ## Introduction
-This repo is what powers the helix website.
+This repo is what powers Frictionless PDF on Helix.
 
 ## Developing
 Install the Helix CLI:

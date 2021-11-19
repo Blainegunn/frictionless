@@ -1,6 +1,4 @@
 window.hlx.initSidekick({
-  project: 'hlx',
+  project: 'Frictionless PDF',
   hlx3: true,
-  host: 'www.hlx.live',
-  pushDownSelector: 'header',
 });
