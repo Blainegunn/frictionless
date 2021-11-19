@@ -1,3 +1,15 @@
 h1 {
     display: block;
 }
+
+.dc-wrapepr {
+    position: absolute;
+    width: 100%;
+    top: 170px;
+    min-height: 435px;
+}
+
+.bottom {
+    background-color: #fafafa;
+    height: 85px;
+}

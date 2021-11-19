@@ -1,0 +1,26 @@
+.seo-content {
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.seo-content-wrapper {
+    padding: 12px 30px;
+    margin-right: 4px;
+    display: inline-block;
+}
+
+p.center {
+    text-align: center;
+}
+
+
+.seo-content .layer {
+    width: 100%;
+    background: #fafafa;
+    position: absolute;
+    z-index: -1;
+}

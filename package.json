@@ -1,0 +1,32 @@
+{
+  "name": "frictionless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "wtr \"./tests/**/*.test.js\" --node-resolve --port=2000 --coverage",
+    "test:watch": "npm test -- --watch",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blainegunn/frictionless.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Blainegunn/frictionless/issues"
+  },
+  "homepage": "https://github.com/Blainegunn/frictionless#readme",
+  "devDependencies": {
+    "@babel/core": "7.15.5",
+    "@babel/eslint-parser": "7.15.4",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-import": "2.24.2",
+    "@esm-bundle/chai": "4.3.4-fix.0",
+    "@web/test-runner": "0.13.20",
+    "@web/test-runner-commands": "0.5.13",
+    "sinon": "11.1.2"
+  }
+}

@@ -1,0 +1,45 @@
+.content-block-picture-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+    padding: 140px 0;
+}
+
+.content-block-picture-text > div:first-of-type {
+    padding-right: 50px;
+    padding-left: 0;
+}
+
+.content-block-picture-text > div {
+    padding-left: 50px;
+
+}
+
+ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+}
+  
+ol li {
+    counter-increment: my-awesome-counter;
+}
+  
+ol li::before {
+    font-weight: bold;
+    background-color: rgba(13,102,208,.13);
+    border-radius: 50%;
+    content: counter(my-awesome-counter);
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 22px;
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+}
+
+
