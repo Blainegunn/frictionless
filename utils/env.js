@@ -30,6 +30,7 @@ export function getEnv() {
       adminconsole: 'stage.adminconsole.adobe.com',
       account: 'stage.account.adobe.com',
       target: false,
+      adobeIO: 'cc-collab-stage.adobe.io',
     },
     prod: {
       // todo: fix later
@@ -37,6 +38,7 @@ export function getEnv() {
       adminconsole: 'adminconsole.adobe.com',
       account: 'account.adobe.com',
       target: true,
+      adobeIO: 'cc-collab-stage.adobe.io',
     },
   };
   const env = envs[envName];
