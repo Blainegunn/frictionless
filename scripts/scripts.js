@@ -15,10 +15,20 @@ export const config = {
       location: '/blocks/feature-list/',
       styles: 'feature-list.css',
     },
+    '.faq': {
+      location: '/blocks/faq/',
+      scripts: 'faq.js',
+      styles: 'faq.css',
+    },
     '.accordion': {
       location: '/blocks/accordion/',
       scripts: 'accordion.js',
       styles: 'accordion.css',
+    },
+    '.footer': {
+      location: '/blocks/footer/',
+      scripts: 'footer.js',
+      styles: 'footer.css',
     },
     '.get-started': {
       location: '/blocks/get-started/',
@@ -29,7 +39,7 @@ export const config = {
       styles: 'z-pattern.css',
       scripts: 'z-pattern.js',
     },
-    '.content-block-picture-text': {
+    '.how-to': {
       location: '/blocks/content-block/',
       styles: 'content-block.css',
       scripts: 'content-block.js',
@@ -200,7 +210,7 @@ async function initJs(element, block) {
     block.module = await import(`${block.location}${block.scripts}`);
   }
   // If this block type has scripts and they're already imported
-  if (block.module) {
+  if (block.module.default) {
     block.module.default(element);
   }
   return element;

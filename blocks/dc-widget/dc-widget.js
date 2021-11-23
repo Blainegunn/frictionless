@@ -1,5 +1,4 @@
 export default function init(el) {
-    console.log(el);
     //create dropzone w/ better ID
     // Add data attributes to DOC
     el.firstChild.classList = 'dc-wrapepr'
@@ -12,7 +11,6 @@ export default function init(el) {
     DC_URL.dataset.verb  = 'word-to-pdf';
     DC_URL.dataset.load_typekit = 'false';
     DC_URL.dataset.load_imslib = 'false';
-    console.log(el.querySelector('#word-to-pdf'));
     el.querySelector('#word-to-pdf').appendChild(DC_URL);
 
     bottomPadding(el);
@@ -24,4 +22,4 @@ export function bottomPadding(element) {
     const BOTTOM = document.createElement('div');
     BOTTOM.classList = 'bottom';
     element.appendChild(BOTTOM);
-  }
+}

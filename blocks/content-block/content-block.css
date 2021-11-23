@@ -1,4 +1,4 @@
-.content-block-picture-text {
+.how-to {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,12 +7,12 @@
     padding: 140px 0;
 }
 
-.content-block-picture-text > div:first-of-type {
+.how-to > div:first-of-type {
     padding-right: 50px;
     padding-left: 0;
 }
 
-.content-block-picture-text > div {
+.how-to > div {
     padding-left: 50px;
 
 }
