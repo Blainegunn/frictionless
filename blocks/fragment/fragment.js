@@ -1,4 +1,4 @@
-import { decorateAnchors } from '../../scripts/scripts.js';
+import { config, setupBlocks, loadBlocks, decorateAnchors } from '../../scripts/scripts.js';
 
 async function fetchFragment(path) {
   const resp = await fetch(`${path}.plain.html`);
@@ -14,6 +14,8 @@ export default async function init(element) {
   if (!html) return null;
   element.insertAdjacentHTML('beforeend', html);
   element.querySelector('div').remove();
+  const blocks = setupBlocks(element, config);
+  await loadBlocks(blocks);
   element.classList.add('is-Visible');
   return decorateAnchors(element);
 }
