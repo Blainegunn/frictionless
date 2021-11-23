@@ -14,6 +14,10 @@ export default function init(el) {
     el.querySelector('#word-to-pdf').appendChild(DC_URL);
 
     bottomPadding(el);
+    setTimeout (() => {
+        personalization(el);
+
+    },1000)
 
 }
 
@@ -22,4 +26,13 @@ export function bottomPadding(element) {
     const BOTTOM = document.createElement('div');
     BOTTOM.classList = 'bottom';
     element.appendChild(BOTTOM);
+}
+
+export function personalization (element) {
+    if (element && window !== 'undefined') {
+        const DATA = window.dc_hosted.getUserLimits();
+        DATA.then((val) => {
+            window.doccloudPersonalization = val;
+        });
+    }
 }
