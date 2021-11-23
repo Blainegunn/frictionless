@@ -7,6 +7,11 @@ export const config = {
       scripts: 'header.js',
       styles: 'header.css',
     },
+    footer: {
+      location: '/blocks/footer/',
+      scripts: 'footer.js',
+      styles: 'footer.css',
+    },
     '.columns': {
       location: '/blocks/columns/',
       styles: 'columns.css',
