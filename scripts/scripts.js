@@ -67,10 +67,9 @@ export const config = {
       location: '/blocks/fragment/',
       scripts: 'fragment.js',
     },
-    '.sidekick-generator': {
-      location: '/blocks/sidekick/',
-      scripts: 'generator.js',
-      styles: 'generator.css',
+    '.rating': {
+      location: '/blocks/rating/',
+      scripts: 'rating.js',
     },
     '.service-status': {
       lazy: true,
