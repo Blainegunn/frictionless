@@ -10,7 +10,7 @@ const TEST_URL =
 const SHEET =
     'https://adobe.sharepoint.com/:x:/r/sites/dexter/_layouts/15/guestaccess.aspx?email=cpeyer%40adobe.com&e=4%3AkKlO86&at=9&wdLOR=cC7B42C77-6E8E-9A43-8886-3D4BE3D2D924&share=EQbXsR9mwiBGsrkxam9M5O0B0sGc3UeRSHbVqXi5d9lpTQ';
 const REVIEW_PATH = document.head.querySelector(`meta[name="review-path"]`).content || 'dc/dev/convert-pdf';
-const REVIEW_DOMAIN = 'http://www.adobe.com/reviews-api';
+const REVIEW_DOMAIN = 'https://www.adobe.com/reviews-api';
 
 const COMMENT_THRESHOLD = 3;
 
