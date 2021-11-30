@@ -67,6 +67,11 @@ export const config = {
       location: '/blocks/fragment/',
       scripts: 'fragment.js',
     },
+    '.dc-fragment': {
+      location: '/blocks/dc-fragment/',
+      scripts: 'dc-fragment.js',
+      styles: 'dc-fragment.css',
+    },
     '.rating': {
       location: '/blocks/rating/',
       scripts: 'rating.js',

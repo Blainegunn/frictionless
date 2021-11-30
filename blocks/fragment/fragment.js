@@ -2,6 +2,7 @@ import { config, setupBlocks, loadBlocks, decorateAnchors } from '../../scripts/
 
 async function fetchFragment(path) {
   const resp = await fetch(`${path}.plain.html`);
+
   if (resp.ok) {
     return resp.text();
   }
