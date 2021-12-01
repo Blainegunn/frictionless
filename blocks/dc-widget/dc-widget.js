@@ -62,8 +62,8 @@ export function bottomPadding(element) {
 
 export function signedIn() {
     if(adobeIMS.isSignedInUser()) {
-        console.log('logged in');
-        window.location.replace = document.querySelector('[data-fwd-url]').dataset.fwdUrl;
+        const R_URL = document.querySelector('[data-fwd-url]').dataset.fwdUrl.textContent;
+        window.location.replace = R_URL;
     }
 }
 
