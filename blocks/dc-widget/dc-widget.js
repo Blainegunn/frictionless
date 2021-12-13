@@ -22,7 +22,8 @@ export default function init(el) {
     DC_URL.dataset.dropzone_id = 'word-to-pdf';
     DC_URL.dataset.locale  = 'en-us';
     DC_URL.dataset.server_env  = 'dev';
-    DC_URL.dataset.verb  = 'word-to-pdf';
+    // DC_URL.dataset.verb  = 'word-to-pdf';
+    DC_URL.dataset.verb  = 'pdf-to-word';
     DC_URL.dataset.load_typekit = 'false';
     DC_URL.dataset.load_imslib = 'false';
     el.querySelector('#word-to-pdf').appendChild(DC_URL);
@@ -34,6 +35,9 @@ export default function init(el) {
         personalization(el);
         dcEvents(el);
         signedIn();
+        const evt = new CustomEvent("imslib.ready", { detail: { instance: window.adobeIMS }});
+        evt.initEvent("imslib.ready", true, true);
+        document.dispatchEvent(evt);
 
     },1000)
 
@@ -48,8 +52,24 @@ export function dcEvents(el) {
             document.querySelector('.how-to').style.display = 'none';
             document.querySelector('.faq').style.display = 'none';
                 //after conversion make it 220px and animate
-    // also hide seo, faq and how to
+                // also hide seo, faq and how to
         }
+
+        //'.-hide-preview'
+        if (e === PREVIEW_GEN) {
+            const PREVIEW_HIDES = document.querySelectorAll('.-hide-preview');
+            PREVIEW_HIDES.forEach( (ele) => {
+                ele.classList.add('-hide');
+            })
+        }
+        //'.-show-upsell'
+        if (e === UPSELL_DIS) {
+            const UPSELL_SHOW = document.querySelectorAll('.-show-upsell');
+            UPSELL_SHOW.forEach( (ele) => {
+                ele.classList.remove('-hide');
+            })
+        }
+        
     })
 }
 
@@ -63,6 +83,7 @@ export function bottomPadding(element) {
 export function signedIn() {
     if(adobeIMS.isSignedInUser()) {
         const R_URL = document.querySelector('[data-fwd-url]').dataset.fwdUrl.textContent;
+        console.log('R_URL');
         console.log(R_URL);
         // window.location.replace(R_URL);
     }
