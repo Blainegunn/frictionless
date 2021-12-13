@@ -243,7 +243,7 @@ export async function loadElement(el, blockConf) {
         initJs(el, blockConf);
       }
       if (blockConf.styles) {
-        loadStyle(`${blockConf.location}${blockConf.styles}`, () => {
+        loadStyle(`https://main--frictionless--blainegunn.hlx3.page${blockConf.location}${blockConf.styles}`, () => {
           blockLoaded();
         });
       } else {

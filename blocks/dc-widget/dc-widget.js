@@ -22,8 +22,8 @@ export default function init(el) {
     DC_URL.dataset.dropzone_id = 'word-to-pdf';
     DC_URL.dataset.locale  = 'en-us';
     DC_URL.dataset.server_env  = 'dev';
-    // DC_URL.dataset.verb  = 'word-to-pdf';
-    DC_URL.dataset.verb  = 'pdf-to-word';
+    DC_URL.dataset.verb  = 'word-to-pdf';
+    // DC_URL.dataset.verb  = 'pdf-to-word';
     DC_URL.dataset.load_typekit = 'false';
     DC_URL.dataset.load_imslib = 'false';
     el.querySelector('#word-to-pdf').appendChild(DC_URL);
