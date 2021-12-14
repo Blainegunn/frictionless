@@ -12,6 +12,11 @@ export const config = {
       scripts: 'footer.js',
       styles: 'footer.css',
     },
+    '.bottom-right-fixed': {
+      location: '/blocks/browser-ext/',
+      scripts: 'browser-ext.js',
+      styles: 'browser-ext.css',
+    },
     '.columns': {
       location: '/blocks/columns/',
       styles: 'columns.css',

@@ -1,0 +1,28 @@
+.bottom-right-fixed {
+    display: none;
+    background-color: #fafafa;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 20px;
+    box-shadow: 0 0.5em 1em -0.125em hsl(0deg 0% 4% / 10%), 0 0 0 1px hsl(0deg 0% 4% / 2%);
+}
+
+.section-ext {
+    float: right;
+    padding: 20px;
+}
+
+.spectrum-close-circle-dark::after {
+    position: absolute;
+    content: "✕";
+    width: 20px;
+    height: 20px;
+    right: 1px;
+    top: 1px;
+    color: #adb2b2;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+

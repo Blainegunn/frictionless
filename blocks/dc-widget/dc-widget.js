@@ -41,7 +41,7 @@ export default function init(el) {
         evt.initEvent("imslib.ready", true, true);
         document.dispatchEvent(evt);
 
-    },1000)
+    },2000)
 
 }
 
