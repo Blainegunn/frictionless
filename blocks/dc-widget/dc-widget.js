@@ -12,6 +12,8 @@ const UPSELL_DIS = 'upsell-displayed';
 export default function init(el) {
     //create dropzone w/ better ID
     // Add data attributes to DOC
+    console.log(el);
+    console.log('sgs');
     el.firstChild.classList.add('dc-wrapper');
     el.children[1].classList.add('forward');
     el.children[1].dataset.fwdUrl =  el.children[1].textContent;
