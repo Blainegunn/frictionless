@@ -1,6 +1,5 @@
 export default function init(el) {
     const wrappers = el.children;
-    console.log(wrappers);
     Array.from(wrappers).forEach(wrapper => {
         wrapper.classList.add('footer-group');
 

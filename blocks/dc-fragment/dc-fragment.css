@@ -1,0 +1,15 @@
+.dc-variation {
+    display: none;
+}
+
+.dc-variation.first-run {
+    display: block;
+}
+
+.dc-variation.show {
+    display: block;
+}
+
+.dc-variation.hide {
+    display: none;
+}

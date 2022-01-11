@@ -12,6 +12,11 @@ export const config = {
       scripts: 'footer.js',
       styles: 'footer.css',
     },
+    '.bottom-right-fixed': {
+      location: '/blocks/browser-ext/',
+      scripts: 'browser-ext.js',
+      styles: 'browser-ext.css',
+    },
     '.columns': {
       location: '/blocks/columns/',
       styles: 'columns.css',
@@ -54,10 +59,6 @@ export const config = {
       styles: 'dc-widget.css',
       scripts: 'dc-widget.js',
     },
-    '.background': {
-      location: '/blocks/background/',
-      styles: 'background.css',
-    },
     '.seo-content': {
       location: '/blocks/seo-content/',
       styles: 'seo-content.css',
@@ -67,10 +68,14 @@ export const config = {
       location: '/blocks/fragment/',
       scripts: 'fragment.js',
     },
-    '.sidekick-generator': {
-      location: '/blocks/sidekick/',
-      scripts: 'generator.js',
-      styles: 'generator.css',
+    '.dc-fragment': {
+      location: '/blocks/dc-fragment/',
+      scripts: 'dc-fragment.js',
+      styles: 'dc-fragment.css',
+    },
+    '.rating': {
+      location: '/blocks/rating/',
+      scripts: 'rating.js',
     },
     '.service-status': {
       lazy: true,

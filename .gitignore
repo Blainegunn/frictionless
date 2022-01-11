@@ -6,6 +6,8 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+.DS_Store
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
@@ -80,7 +82,6 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/
@@ -103,8 +104,15 @@ dist
 # TernJS port file
 .tern-port
 
+<<<<<<< HEAD
 .DS_Store
 
 .parcel-cache
 
 .vscode
+=======
+# VS Code
+.vscode
+
+.parcel-cache
+>>>>>>> af2a2ca6d54b20c422881de83415cc21513778f1

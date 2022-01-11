@@ -24,3 +24,7 @@ p.center {
     position: absolute;
     z-index: -1;
 }
+
+.-hide {
+    display: none;
+}

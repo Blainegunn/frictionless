@@ -2,7 +2,7 @@ h1 {
     display: block;
 }
 
-.dc-wrapepr {
+.dc-wrapper {
     position: absolute;
     width: 100%;
     top: 170px;
@@ -12,4 +12,8 @@ h1 {
 .bottom {
     background-color: #fafafa;
     height: 85px;
+}
+
+.forward {
+    display: none;
 }
