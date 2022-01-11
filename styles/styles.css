@@ -211,6 +211,13 @@ strong a {
     background-color: #1672E6;
 }
 
+.dc-widget > div:first-child {
+    position: absolute;
+    width: 100%;
+    top: 170px;
+    min-height: 435px;
+}
+
 .bottom {
     -webkit-transition: height 1s; 
     -moz-transition: height 1s; 
