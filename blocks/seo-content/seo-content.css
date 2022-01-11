@@ -28,3 +28,37 @@ p.center {
 .-hide {
     display: none;
 }
+
+@media screen and (max-width: 900px) {
+    .seo-content,
+    .how-to,
+    .faq-content-wrapper {
+        flex-direction: column;
+    }
+
+    .faq-content-wrapper {
+        width: 90%;
+        margin: 0;
+    }
+
+    .footer {
+        margin: 0;
+        width: inherit;
+    }
+
+    .dc-wrapper {
+        top: 80px !important;
+        margin: 10px;
+        width: calc(100% - 20px) !important;
+    }
+
+    .how-to > div {
+        padding: 0;
+    }
+
+    .question,
+    .answer {
+        width: 100%;
+        max-width: 100%;
+    }
+}

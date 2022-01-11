@@ -22,7 +22,10 @@ export default function init(el) {
     
         const DC_URL = document.createElement('script');
         DC_URL.id = 'adobe_dc_sdk_launcher';
-        DC_URL.setAttribute('src','https://documentcloud.adobe.com/dc-hosted/2.23.2_1.120.8/dc-app-launcher.js');
+        // DC_URL.setAttribute('src','https://documentcloud.adobe.com/dc-hosted/2.23.2_1.120.8/dc-app-launcher.js');
+        DC_URL.setAttribute('src','https://dc.dev.dexilab.acrobat.com/dc-hosted/2.22.8_1.118.2/dc-app-launcher.js');
+
+        
         DC_URL.dataset.dropzone_id = 'word-to-pdf';
         DC_URL.dataset.locale  = 'en-us';
         DC_URL.dataset.server_env  = 'dev';
