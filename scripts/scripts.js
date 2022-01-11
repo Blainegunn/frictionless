@@ -59,10 +59,6 @@ export const config = {
       styles: 'dc-widget.css',
       scripts: 'dc-widget.js',
     },
-    '.background': {
-      location: '/blocks/background/',
-      styles: 'background.css',
-    },
     '.seo-content': {
       location: '/blocks/seo-content/',
       styles: 'seo-content.css',

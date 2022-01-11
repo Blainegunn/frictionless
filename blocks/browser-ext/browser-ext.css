@@ -25,4 +25,10 @@
     cursor: pointer;
 }
 
+@media screen and (min-width: 900px) {
+    .modal.is-Visible {
+        display: block;
+    }
+}
+
 

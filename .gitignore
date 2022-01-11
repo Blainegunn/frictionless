@@ -104,7 +104,15 @@ typings/
 # TernJS port file
 .tern-port
 
+<<<<<<< HEAD
+.DS_Store
+
+.parcel-cache
+
+.vscode
+=======
 # VS Code
 .vscode
 
 .parcel-cache
+>>>>>>> af2a2ca6d54b20c422881de83415cc21513778f1

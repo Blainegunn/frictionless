@@ -1,7 +1,7 @@
 export default function init(el) {
     console.log(el);
     if (!localStorage.blainetest) {
-        el.style.display = 'block';
+        el.classList.add('is-Visible');
     }
 
     const secs = el.querySelectorAll('div');
@@ -22,8 +22,7 @@ export function closeBtn(el) {
     cb.addEventListener('click', ()=>{
         console.log('click');
         localStorage.blainetest = true;
-        el.style.display = 'none';
-
+        el.classList.remove('is-Visible');
     })
 
 }
