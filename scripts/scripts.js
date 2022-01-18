@@ -59,7 +59,7 @@ export const config = {
       styles: 'dc-widget.css',
       scripts: 'dc-widget.js',
     },
-    'header': {
+    'main': {
       location: '/blocks/mar-tech/',
       scripts: 'mar-tech.js',
     },
