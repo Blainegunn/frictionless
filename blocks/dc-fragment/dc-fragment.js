@@ -35,8 +35,7 @@ export default async function init(element) {
 
   setTimeout(() => {
     hideShow(box);
-
-  }, 2000);
+  }, 5000);
 
 }
 
@@ -46,7 +45,6 @@ export function hideShow(sections) {
   const HAS_CREATED = doccloudPersonalization.create_pdf.has_processed;
 
   if (CAN_CREATE && HAS_CREATED) {
-    console.log(sections);
     Array.from(sections).forEach((item, index) => {
       item.classList.add('hide')
       if(item.classList.contains('returning')) {

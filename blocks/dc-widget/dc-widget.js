@@ -10,7 +10,7 @@ const DROPZONE_DIS = 'dropzone-displayed';
 const UPSELL_DIS = 'upsell-displayed';
 
 const params = new URLSearchParams(document.location.search)
-const timeOutLength = parseInt(params.get('timeout')) || 0;
+const timeOutLength = parseInt(params.get('timeoutDC')) || 0;
 
 export default function init(el) {
     //create dropzone w/ better ID
@@ -19,13 +19,12 @@ export default function init(el) {
         el.firstChild.classList.add('dc-wrapper');
         el.children[1].classList.add('forward');
         el.children[1].dataset.fwdUrl =  el.children[1].textContent;
-    
+
         const DC_URL = document.createElement('script');
         DC_URL.id = 'adobe_dc_sdk_launcher';
         // DC_URL.setAttribute('src','https://documentcloud.adobe.com/dc-hosted/2.23.2_1.120.8/dc-app-launcher.js');
         DC_URL.setAttribute('src','https://dc.dev.dexilab.acrobat.com/dc-hosted/2.22.8_1.118.2/dc-app-launcher.js');
 
-        
         DC_URL.dataset.dropzone_id = 'word-to-pdf';
         DC_URL.dataset.locale  = 'en-us';
         DC_URL.dataset.server_env  = 'dev';
@@ -34,9 +33,7 @@ export default function init(el) {
         DC_URL.dataset.load_typekit = 'false';
         DC_URL.dataset.load_imslib = 'false';
         el.querySelector('#word-to-pdf').appendChild(DC_URL);
-    
-        console.log(el);
-    
+
         bottomPadding(el);
         setTimeout (() => {
             personalization(el);
@@ -45,7 +42,7 @@ export default function init(el) {
             const evt = new CustomEvent("imslib.ready", { detail: { instance: window.adobeIMS }});
             evt.initEvent("imslib.ready", true, true);
             document.dispatchEvent(evt);
-    
+            console.log('DC Widget Loaded');
         },2000)
 
     }, timeOutLength);
@@ -91,7 +88,7 @@ export function bottomPadding(element) {
 }
 
 export function signedIn() {
-    if(adobeIMS.isSignedInUser()) {
+    if(adobeIMS && adobeIMS.isSignedInUser()) {
         const R_URL = document.querySelector('[data-fwd-url]').dataset.fwdUrl;
         console.log('R_URL');
         console.log(R_URL);

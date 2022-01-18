@@ -14,7 +14,5 @@ export default function init(el) {
     BOTTOM.classList = 'layer';
     el.appendChild(BOTTOM);
     const H = el.clientHeight;
-    console.log(H);
-
     BOTTOM.style.height = '291px';
 }

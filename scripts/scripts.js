@@ -59,6 +59,10 @@ export const config = {
       styles: 'dc-widget.css',
       scripts: 'dc-widget.js',
     },
+    'header': {
+      location: '/blocks/mar-tech/',
+      scripts: 'mar-tech.js',
+    },
     '.seo-content': {
       location: '/blocks/seo-content/',
       styles: 'seo-content.css',
