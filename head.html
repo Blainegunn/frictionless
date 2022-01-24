@@ -10,6 +10,7 @@
         launch: {
             property: 'global',
             environment: 'stage',
+            embedCode: 'activation/reactor/test/adobe.test.lib',
             controlPageLoad: true
         },
         analytics: {
@@ -19,8 +20,4 @@
     };
 </script>
 
-<script src="https://www.adobe.com/marketingtech/main.stage.min.js"></script>
-
-<script>
-    window.marketingtech.adobe.launch.embedCode = 'activation/reactor/test/adobe.test.lib'
-</script>
+<script src="https://www.adobe.com/marketingtech/main.no-promise.min.js"></script>
